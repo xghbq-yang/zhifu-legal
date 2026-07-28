@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知肤 - 隐私政策</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif; background: #F5F6F8; color: #1A1A1A; line-height: 1.8; }
+.container { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+.updated { font-size: 13px; color: #999; margin-bottom: 32px; }
+h2 { font-size: 18px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; color: #2D7A52; }
+p, li { font-size: 15px; margin-bottom: 8px; }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+.section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+.nav { display: flex; gap: 12px; margin-bottom: 32px; }
+.nav a { text-decoration: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; background: #E8F5E9; color: #2D7A52; }
+.nav a.active { background: #4A9B6E; color: #fff; }
+.footer { margin-top: 48px; text-align: center; font-size: 13px; color: #999; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>隐私政策</h1>
+<p class="updated">更新日期：2026-07-27 · 知肤（ZhiFu）</p>
+
+<div class="section">
+<h2>1. 我们收集什么</h2>
+<p>知肤 App 仅在您主动使用功能时收集以下数据：</p>
+<ul>
+<li>面部照片：仅在您点击"拍照测肤"后上传，用于 AI 肤质分析</li>
+<li>成分表照片：仅在您点击"拍成分表"后上传，用于 OCR 识别</li>
+<li>产品条码：仅在您扫码后查询对应产品信息</li>
+<li>使用记录：每日各功能使用次数（用于免费额度限制）</li>
+</ul>
+<p><strong>我们不收集：</strong></p>
+<ul>
+<li>您的姓名、手机号、身份证号</li>
+<li>您的位置信息</li>
+<li>您的通讯录、相册（除主动选择的照片外）</li>
+<li>设备标识符用于追踪</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>2. 我们如何使用您的数据</h2>
+<ul>
+<li>面部照片：上传至后端调用 GLM-4V 进行 AI 分析，分析完成后不永久存储照片</li>
+<li>成分表照片：上传至后端进行 OCR 识别，识别完成后不永久存储照片</li>
+<li>产品信息（条码、成分、名称）：存储在您的设备本地（SwiftData），以及后端产品库（用于众包，供其他用户查询）</li>
+<li>使用记录：仅存储在您的设备本地（UserDefaults）</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>3. 第三方服务</h2>
+<p>我们使用以下第三方服务处理您的数据：</p>
+<ul>
+<li>智谱 AI（GLM-4V）：用于面部照片的肤质分析和成分表照片的 OCR 识别。数据传输采用 HTTPS 加密。</li>
+<li>Open Food Facts / Open Beauty Facts：用于条码查询产品信息。仅传输条码数字。</li>
+<li>Apple StoreKit 2：用于订阅购买。所有交易由 Apple 处理，我们不接触您的支付信息。</li>
+<li>Supabase：用于用户登录和云端数据同步。</li>
+</ul>
+<p>第三方服务均有各自的隐私政策，请参阅对应服务的条款。</p>
+</div>
+
+<div class="section">
+<h2>4. 数据存储与安全</h2>
+<ul>
+<li>本地数据：存储在您设备的 SwiftData / UserDefaults 中，受 iOS 沙箱保护</li>
+<li>服务端数据：产品库存储在服务器，仅包含条码/产品名/成分（不含个人标识）</li>
+<li>数据传输：所有 API 请求采用 HTTPS 加密传输</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>5. 您的权利</h2>
+<ul>
+<li>访问权：查看您本地存储的所有数据（"我的→设置→查看数据"）</li>
+<li>删除权：在"我的→设置→清除数据"删除本地所有数据</li>
+<li>撤回同意：卸载 App 即视为撤回所有同意</li>
+<li>邮件删除云端数据：联系 xghbqyxx@163.com，我们会在 7 个工作日内处理</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>6. 儿童隐私</h2>
+<p>知肤 App 不面向 13 岁以下儿童。我们不会有意收集儿童的个人信息。如果您是儿童的监护人，发现您的孩子向我们提供了个人信息，请联系我们删除。</p>
+</div>
+
+<div class="section">
+<h2>7. 政策更新</h2>
+<p>本隐私政策可能更新。重大变更时我们会通过 App 内通知告知您。继续使用 App 即视为同意更新后的政策。</p>
+</div>
+
+<div class="section">
+<h2>8. 联系我们</h2>
+<p>如有任何隐私相关问题，请联系：</p>
+<p>邮箱：<a href="mailto:xghbqyxx@163.com">xghbqyxx@163.com</a></p>
+</div>
+
+<div class="footer">
+<p>© 2026 知肤 ZhiFu · 让每瓶护肤品都用在刀刃上</p>
+</div>
+</div>
+</body>
+</html>
